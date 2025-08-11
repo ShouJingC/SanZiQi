@@ -1,13 +1,13 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include"game.h"
-void InitBoard(char board[ROW][LINE], int row, int line) {
+void InitBoard(char board[ROW][LINE], int row, int line) {//初始化棋盘（二维数组）
 	for (int i = 0; i < row; i++) {
 		for (int j = 0; j < line; j++) {
 			board[i][j] = ' ';
 		}
 	}
 }
-void DisplayBorad(char board[ROW][LINE], int row, int line) {
+void DisplayBorad(char board[ROW][LINE], int row, int line) {//显示棋盘
 	for (int i = 0; i < row; i++) {
 		for (int j = 0; j < line; j++) {
 			printf(" %c ", board[i][j]);
